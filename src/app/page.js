@@ -5,6 +5,8 @@ import HeroSlider from "@/app/components/Home/HeroSlider";
 import CourseGrid from "@/app/components/Home/CourseGrid"
 import WhyChooseUs from "@/app/components/Home/WhyChooseUs";
 import SkillDevelopment from "@/app/components/Home/SkillDevelopment";
+import Testimonials from "@/app/components/Home/Testimonials"
+
 // import Features from "@/app/components/Features";
 // import UpcomingCourses from "@/app/components/UpcomingCourses";
 // import Testimonials from "@/app/components/Testimonials";
@@ -16,6 +18,7 @@ export default function HomePage() {
       <CourseGrid/>
       <WhyChooseUs/>
       <SkillDevelopment/>
+      <Testimonials/>
       {/* <Features /> */}
       {/* <UpcomingCourses /> */}
       {/* <Testimonials /> */}

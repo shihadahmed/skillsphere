@@ -1,10 +1,7 @@
-
 import { Arimo } from "next/font/google";
 import NavbarComponent from "@/app/components/Navbar";
 import FooterComponent from "@/app/components/Footer";
 import "./globals.css";
-
-
 
 const arimo = Arimo({
   subsets: ["latin"],
@@ -25,6 +22,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className="h-full antialiased light" 
       style={{ colorScheme: "light" }}     
+      suppressHydrationWarning
     >
       <body className={`${arimo.className} min-h-full flex flex-col bg-white text-slate-900`}>
         <NavbarComponent />
