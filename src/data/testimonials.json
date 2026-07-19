@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Md. Rahim Uddin",
+    "course": "Web Development",
+    "review": "I completed the Web Development course from SkillSphere. The modules were highly practical and up-to-date. The hands-on projects helped me secure my first international remote job.",
+    "rating": 5,
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+  },
+  {
+    "id": 2,
+    "name": "Abdul Karim Hossain",
+    "course": "Web Development",
+    "review": "The JavaScript and React parts of this Web Development course were exceptional. The instructors guide you step-by-step from zero to professional level. Best investment ever!",
+    "rating": 5,
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+  },
+  {
+    "id": 3,
+    "name": "Ayesha Sultana",
+    "course": "UI/UX Design",
+    "review": "My design thinking improved completely after enrolling in the UI/UX Design course. Learning Figma and wireframing through live projects was amazing. Highly recommended!",
+    "rating": 5,
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face"
+  },
+  {
+    "id": 4,
+    "name": "Fatima Jannat Rahman",
+    "course": "Graphics Design",
+    "review": "From basic shapes to advanced branding guidelines, this Graphics Design course covers everything. The mentor support in the marketplace module was a lifesaver for my freelancing career.",
+    "rating": 5,
+    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+  },
+  {
+    "id": 5,
+    "name": "Farhan Ahmed Chowdhury",
+    "course": "Data Science",
+    "review": "The Data Science course modules are very structured. Python libraries, data analysis, and machine learning concepts were simplified perfectly. The real-world datasets were fun to work with.",
+    "rating": 5,
+    "avatar": "https://images.unsplash.com/photo-1628157582853-a796fa650a6a?w=150&h=150&fit=crop&crop=face"
+  },
+  {
+    "id": 6,
+    "name": "Imran Hossain Khan",
+    "course": "UI/UX Design",
+    "review": "If you want to build a career in product design, this UI/UX course is a must. The portfolio review sessions and interview preparation tips gave me huge confidence.",
+    "rating": 5,
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+  },
+  {
+    "id": 7,
+    "name": "Farhana Islam Siddiqui",
+    "course": "Graphics Design",
+    "review": "The assignments in the Graphics Design track forced me to think creatively. Now I handle client projects independently and my designs look professional and modern.",
+    "rating": 5,
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face"
+  },
+  {
+    "id": 8,
+    "name": "Arif Mahmud Hasan",
+    "course": "Web Development",
+    "review": "I joined SkillSphere for Web Development. The backend development modules with Node.js and database management gave me the solid full-stack skill set I always wanted.",
+    "rating": 5,
+    "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=150&h=150&fit=crop&crop=face"
+  },
+  {
+    "id": 9,
+    "name": "Rafiq Uddin Sheikh",
+    "course": "Data Science",
+    "review": "This Data Science course bridged the gap between theory and execution. The guidance on building a solid GitHub profile and cracking technical interviews was priceless.",
+    "rating": 5,
+    "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face"
+  }
+]
