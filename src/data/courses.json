@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "title": "Professional Graphic Design Masterclass",
+    "instructor": "Arif Rahman",
+    "duration": "24 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "description": "Kickstart your career in the creative world of graphic design. Master Photoshop, Illustrator, and essential branding skills.",
+    "image": "/courses/gp.jpg",
+    "category": "Design"
+  },
+  {
+    "id": 2,
+    "title": "Python Programming with Machine Learning",
+    "instructor": "Dr. Mahbub Alam",
+    "duration": "30 hours",
+    "rating": 4.8,
+    "level": "All Levels",
+    "description": "Exclusive online batch covering Python basics, Data Science, EDA, and predictive analytics models.",
+    "image": "/courses/pymal.jpg",
+    "category": "Data Science"
+  },
+  {
+    "id": 3,
+    "title": "Python & AI Productivity Solutions",
+    "instructor": "Sajid Ahmed",
+    "duration": "16 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Learn error-free Python solutions for web sectors. Includes a premium AI for Productivity course completely free.",
+    "image": "/courses/python.jpg",
+    "category": "Data Science"
+  },
+  {
+    "id": 4,
+    "title": "Premium IT Career Guidance & Strategy",
+    "instructor": "Zayan Khan",
+    "duration": "8 hours",
+    "rating": 4.9,
+    "level": "All Levels",
+    "description": "Make the safest investment for your future career. Get comprehensive industry insights and absolute skill mastery guidelines.",
+    "image": "/courses/it.jpg",
+    "category": "Career"
+  },
+  {
+    "id": 5,
+    "title": "MERN Stack Essentials for Smart Developers",
+    "instructor": "Asif Iqbal",
+    "duration": "40 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "description": "Time is changing and technology is advancing. Build powerful, demand-driven applications using the modern MERN ecosystem.",
+    "image": "/courses/mstack.jpg",
+    "category": "Development"
+  },
+  {
+    "id": 6,
+    "title": "MERN Stack Full-Stack Career Mastery",
+    "instructor": "Tanvir Hasan",
+    "duration": "50 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "A comprehensive end-to-end full-stack course covering MongoDB, Express.js, React, Node.js, Next.js, and AI automation tools.",
+    "image": "/courses/react.jpg",
+    "category": "Development"
+  },
+  {
+    "id": 7,
+    "title": "Advanced WordPress Theme Customization",
+    "instructor": "Rakibul Islam",
+    "duration": "22 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "description": "Learn the most demanding marketplace skill. Build professional, highly functional, and beautiful business websites without coding.",
+    "image": "/courses/wp.jpg",
+    "category": "Development"
+  },
+  {
+    "id": 8,
+    "title": "Computer-Based IELTS Preparation Course",
+    "instructor": "Sarah Islam",
+    "duration": "20 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Get ready for the computer-delivered IELTS exam with comprehensive guidelines, mock test practice, and score strategies.",
+    "image": "/courses/ielts.jpg",
+    "category": "Language"
+  },
+  {
+    "id": 9,
+    "title": "Spoken English & Communication Secrets",
+    "instructor": "Nadia Sultana",
+    "duration": "15 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Build your confidence and speak English fluently with interactive modules, daily practice, and real conversations.",
+    "image": "/courses/spkn.jpg",
+    "category": "Language"
+  },
+  {
+    "id": 10,
+    "title": "Advanced Digital Freelancing Skills",
+    "instructor": "Fahim Murshed",
+    "duration": "18 hours",
+    "rating": 4.7,
+    "level": "Advanced",
+    "description": "Upgrade your professional skills to the next level with our exclusive masterclass tailored for global marketplace success.",
+    "image": "/courses/si.jpg",
+    "category": "Career"
+  },
+  {
+    "id": 11,
+    "title": "UI/UX Design Strategy & Prototyping",
+    "instructor": "Tamanna Chowdhury",
+    "duration": "25 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Master wireframing, high-fidelity UI design, user journey mapping, and professional prototyping using Figma.",
+    "image": "/courses/fsd.jpg",
+    "category": "Design"
+  },
+  {
+    "id": 12,
+    "title": "Cyber Security Fundamentals & Ethical Hacking",
+    "instructor": "Nafis Fuad",
+    "duration": "28 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "description": "Learn network security basics, vulnerability assessments, penetration testing, and modern ethical hacking methodologies.",
+    "image": "/courses/fswd.jpg",
+    "category": "Cyber Security"
+  },
+  {
+    "id": 13,
+    "title": "Digital Marketing & Brand Growth Strategies",
+    "instructor": "Rashedul Karim",
+    "duration": "20 hours",
+    "rating": 4.6,
+    "level": "All Levels",
+    "description": "Accelerate business growth using advanced SEO tools, targeted social media marketing campaigns, and Google Analytics.",
+    "image": "/courses/mern.jpg",
+    "category": "Marketing"
+  }
+]
