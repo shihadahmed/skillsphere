@@ -1,11 +1,52 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function JoinTeam() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+
+    if (!formData.name || !formData.email || !formData.phone) {
+      toast.error("Please fill in all required fields!");
+      return;
+    }
+
+
+    toast.success("Application submitted successfully! We will get back to you soon.");
+
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+  };
+
   return (
-    <section className="py-16 md:py-24 bg-white text-slate-900 w-full overflow-hidden">
+    <section className="py-16 md:py-24 bg-white text-slate-900 w-full overflow-hidden relative">
+
+      <ToastContainer position="top-right" autoClose={3000} />
+
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
-       
+
         <div className="flex justify-center rounded-3xl md:justify-end relative h-full min-h-[400px] md:min-h-[600px] order-2 md:order-1">
           <div className="w-full max-w-[450px] relative aspect-[4/5] h-full flex items-end">
             <Image
@@ -19,24 +60,21 @@ export default function JoinTeam() {
           </div>
         </div>
 
-       
+
         <div className="flex justify-center md:justify-start order-1 md:order-2">
           <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-[0_10px_50px_-15px_rgba(0,0,0,0.05)] w-full max-w-[500px]">
             
-           
             <div className="mb-4">
               <span className="bg-[#e0e7ff] text-[#006aff] border border-[#cbd9f4] px-4 py-1 rounded-full text-xs font-semibold tracking-wide inline-block">
                 Join us today as a mentor and become part of our success stories.
               </span>
             </div>
 
-         
             <h2 className="text-xl md:text-2xl font-extrabold text-slate-800 leading-tight mb-8">
               Join Our Team & Shape the Future Generation
             </h2>
 
-           
-            <form className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5">
               
               <div className="relative border-b border-slate-200">
                 <label htmlFor="name" className="text-xs text-slate-500 font-medium absolute top-0 left-0 -translate-y-1/2">
@@ -46,6 +84,8 @@ export default function JoinTeam() {
                   type="text"
                   id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Enter your name"
                   className="w-full pt-5 pb-2 text-sm text-slate-800 placeholder-slate-300 bg-transparent focus:outline-none focus:border-[#00b074] transition-colors"
                 />
@@ -59,6 +99,8 @@ export default function JoinTeam() {
                   type="email"
                   id="email"
                   name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Enter your email"
                   className="w-full pt-5 pb-2 text-sm text-slate-800 placeholder-slate-300 bg-transparent focus:outline-none focus:border-[#00b074] transition-colors"
                 />
@@ -72,6 +114,8 @@ export default function JoinTeam() {
                   type="tel"
                   id="phone"
                   name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   placeholder="Enter your phone number"
                   className="w-full pt-5 pb-2 text-sm text-slate-800 placeholder-slate-300 bg-transparent focus:outline-none focus:border-[#00b074] transition-colors"
                 />
@@ -85,16 +129,17 @@ export default function JoinTeam() {
                   id="message"
                   name="message"
                   rows="3"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Tell us about yourself"
                   className="w-full pt-5 pb-2 text-sm text-slate-800 placeholder-slate-300 bg-transparent focus:outline-none focus:border-[#00b074] transition-colors resize-none"
                 />
               </div>
 
-              
               <div className="pt-6">
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#006aff] to-[#00b074] text-white py-3 px-6 rounded-lg text-sm font-semibold hover:opacity-95 transition-opacity duration-300 group"
+                  className="w-full flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#006aff] to-[#00b074] text-white py-3 px-6 rounded-lg text-sm font-semibold hover:opacity-95 transition-opacity duration-300 group cursor-pointer"
                 >
                   APPLY NOW
                   <svg
