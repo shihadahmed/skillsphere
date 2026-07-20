@@ -7,10 +7,8 @@ import WhyChooseUs from "@/app/components/Home/WhyChooseUs";
 import SkillDevelopment from "@/app/components/Home/SkillDevelopment";
 import Testimonials from "@/app/components/Home/Testimonials"
 import JoinTeam from "@/app/components/Home/JoinTeam"
+import Newsletter from "@/app/components/Home/Newsletter"
 
-// import Features from "@/app/components/Features";
-// import UpcomingCourses from "@/app/components/UpcomingCourses";
-// import Testimonials from "@/app/components/Testimonials";
 
 export default function HomePage() {
   return (
@@ -21,10 +19,7 @@ export default function HomePage() {
       <JoinTeam/>
       <SkillDevelopment/>
       <Testimonials/>
-      {/* <Features /> */}
-      {/* <UpcomingCourses /> */}
-      {/* <Testimonials /> */}
-
+      <Newsletter/>
     </div>
   );
 }

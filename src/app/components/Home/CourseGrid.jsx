@@ -22,7 +22,7 @@ export default function CourseGrid() {
   };
 
   return (
-    <section className="py-12 bg-white text-slate-900 w-full max-w-7xl mx-auto px-4">
+    <section id="courses" className="py-12 bg-white text-slate-900 w-full max-w-7xl mx-auto px-4">
       
 
       <div className="text-center mb-8">

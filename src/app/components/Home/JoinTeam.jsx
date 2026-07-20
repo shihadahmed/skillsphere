@@ -6,7 +6,7 @@ export default function JoinTeam() {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
        
-        <div className="flex justify-center md:justify-end relative h-full min-h-[400px] md:min-h-[600px] order-2 md:order-1">
+        <div className="flex justify-center rounded-3xl md:justify-end relative h-full min-h-[400px] md:min-h-[600px] order-2 md:order-1">
           <div className="w-full max-w-[450px] relative aspect-[4/5] h-full flex items-end">
             <Image
               src="/instructor.jpg"
