@@ -6,6 +6,7 @@ import CourseGrid from "@/app/components/Home/CourseGrid"
 import WhyChooseUs from "@/app/components/Home/WhyChooseUs";
 import SkillDevelopment from "@/app/components/Home/SkillDevelopment";
 import Testimonials from "@/app/components/Home/Testimonials"
+import JoinTeam from "@/app/components/Home/JoinTeam"
 
 // import Features from "@/app/components/Features";
 // import UpcomingCourses from "@/app/components/UpcomingCourses";
@@ -17,6 +18,7 @@ export default function HomePage() {
       <HeroSlider />
       <CourseGrid/>
       <WhyChooseUs/>
+      <JoinTeam/>
       <SkillDevelopment/>
       <Testimonials/>
       {/* <Features /> */}
