@@ -68,7 +68,7 @@ export default function FooterComponent() {
             <Link href="/terms" className="hover:text-gray-300 transition-colors">
               Terms & Conditions
             </Link>
-            <Link href="/privacy" className="hover:text-gray-300 transition-colors">
+            <Link href="/privacy-policy" className="hover:text-gray-300 transition-colors">
               Privacy Policy
             </Link>
           </div>
