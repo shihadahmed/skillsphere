@@ -59,14 +59,14 @@ export default function MobileHero() {
           }}
           className="w-full h-full"
         >
-          {slides.map((slide) => (
+          {slides.map((slide, index) => (
             <SwiperSlide key={slide.id} className="relative w-full h-full">
               <Image
                 src={slide.image}
                 alt={slide.title}
                 fill
-                priority
-                sizes="100vw"
+                loading={index === 0 ? "eager" : "lazy"} // LCP অপটিমাইজেশনের জন্য
+                sizes="(max-width: 768px) 100vw, 768px"
                 className="object-contain object-center"
               />
             </SwiperSlide>

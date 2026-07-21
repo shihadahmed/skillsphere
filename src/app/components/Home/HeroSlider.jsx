@@ -60,7 +60,7 @@ export default function HeroSlider() {
           pagination={{ clickable: true }}
           className="w-full h-full custom-hero-swiper"
         >
-          {slides.map((slide) => (
+          {slides.map((slide, index) => (
             <SwiperSlide key={slide.id} className="relative w-full h-full flex items-center">
               
               <div className="absolute inset-0 w-full h-full z-0">
@@ -68,7 +68,7 @@ export default function HeroSlider() {
                   src={slide.image}
                   alt={slide.title}
                   fill
-                  priority
+                  priority={index === 0} // শুধুমাত্র প্রথম স্লাইড প্রিলোড হবে
                   sizes="(max-width: 1256px) 100vw, 1256px"
                   className="object-contain object-center" 
                 />
