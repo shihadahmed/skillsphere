@@ -18,8 +18,9 @@ export default function NavbarComponent() {
     { name: "Course Details", href: "/course-details" },
   ];
 
-  const isSignInActive = pathname === "/auth/signin";
   const isSignUpActive = pathname === "/auth/signup";
+  // যদি SignUp পেজে না থাকে, তবে ডিফল্টভাবে Login বাটনটি অ্যাক্টিভ থাকবে
+  const isSignInActive = !isSignUpActive;
 
   const userInitial = session?.user?.name
     ? session.user.name.charAt(0).toUpperCase()

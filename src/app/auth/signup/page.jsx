@@ -41,16 +41,18 @@ export default function SignUpPage() {
         onSuccess: () => {
           setLoading(false);
           toast.success(
-            "Account created successfully! Redirecting to Sign In...",
+            "Account created successfully! Redirecting to Home...",
             {
               position: "top-right",
-              autoClose: 2000,
+              autoClose: 1500,
             },
           );
 
+        
           setTimeout(() => {
-            router.push("/auth/signin");
-          }, 1500);
+            router.push("/");
+            router.refresh();
+          }, 1000);
         },
         onError: (ctx) => {
           setLoading(false);
