@@ -6,9 +6,20 @@
     "duration": "24 hours",
     "rating": 4.9,
     "level": "Beginner",
-    "description": "Kickstart your career in the creative world of graphic design. Master Photoshop, Illustrator, and essential branding skills.",
     "image": "/courses/gp.jpg",
-    "category": "Design"
+    "category": "Design",
+    "overview": "Kickstart your career in the creative world of graphic design. Master Photoshop, Illustrator, and essential branding skills. In this comprehensive masterclass, you will learn fundamental design principles, typography, color theory, visual communication, and layout composition. You will work on real-world projects such as logo design, brand identity kits, social media banners, and print promotional materials. By the end of this course, you will possess a complete portfolio that attracts premium global clients and recruiters.",
+    "howToStart": [
+      "প্রথমে Adobe Photoshop এবং Illustrator সফ্টওয়্যারগুলো সিস্টেমে ইনস্টল করে নিন।",
+      "ভিজ্যুয়াল আর্ট এবং ডিজাইন শেখার মানসিকতা তৈরি করতে Behance বা Dribbble অনুসরণ করুন।",
+      "সপ্তাহের মূল কনসেপ্টগুলো ধারাবাহিকভাবে দেখে প্রতিটি লেসনের প্র্যাকটিস ফাইল ডাউনলোড করে প্র্যাকটিস শুরু করুন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Introduction to Graphic Design, Color Theory & Typography Basics" },
+      { "week": "Week 2", "topic": "Adobe Photoshop Deep Dive – Layering, Photo Manipulation & Masking" },
+      { "week": "Week 3", "topic": "Adobe Illustrator Mastery – Pen Tool, Vector Tracing & Logo Design" },
+      { "week": "Week 4", "topic": "Brand Identity System, Portfolio Building & Freelancing Marketplace Setup" }
+    ]
   },
   {
     "id": 2,
@@ -17,9 +28,20 @@
     "duration": "30 hours",
     "rating": 4.8,
     "level": "All Levels",
-    "description": "Exclusive online batch covering Python basics, Data Science, EDA, and predictive analytics models.",
     "image": "/courses/pymal.jpg",
-    "category": "Data Science"
+    "category": "Data Science",
+    "overview": "Exclusive online batch covering Python basics, Data Science, EDA, and predictive analytics models. This course takes you on a deep dive into data manipulation and algorithmic decision making. You will master Python syntax, control structures, Object-Oriented Programming (OOP), and work extensively with key data libraries including Pandas, NumPy, Matplotlib, and Scikit-Learn. Learn how to clean raw datasets, perform Exploratory Data Analysis (EDA), build Machine Learning algorithms, and evaluate model performance for real-world business intelligence.",
+    "howToStart": [
+      "আপনার কম্পিউটারে Python 3.x এবং Jupyter Notebook/Anaconda Navigator সেটআপ করুন।",
+      "বেসিক গাণিতিক কনসেপ্ট ও স্ট্যাটিস্টিক্সের প্রাথমিক ধারণাগুলো রিভিশন দিয়ে নিন।",
+      "প্রতিদিন নিয়মিত লেকচার দেখে কোড নিজে নিজে এনভায়রনমেন্টে রান করে আউটপুট চেক করুন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Python Fundamentals, Data Types, Control Structures & Functions" },
+      { "week": "Week 2", "topic": "Data Manipulation with NumPy & Pandas, Cleaning Raw Datasets" },
+      { "week": "Week 3", "topic": "Exploratory Data Analysis (EDA) & Data Visualization with Matplotlib/Seaborn" },
+      { "week": "Week 4", "topic": "Supervised Machine Learning Algorithms (Regression, Classification) & Model Evaluation" }
+    ]
   },
   {
     "id": 3,
@@ -28,9 +50,20 @@
     "duration": "16 hours",
     "rating": 4.7,
     "level": "Intermediate",
-    "description": "Learn error-free Python solutions for web sectors. Includes a premium AI for Productivity course completely free.",
     "image": "/courses/python.jpg",
-    "category": "Data Science"
+    "category": "Data Science",
+    "overview": "Learn error-free Python solutions for web sectors. Includes a premium AI for Productivity course completely free. Discover how to leverage Python scripting alongside cutting-edge Artificial Intelligence tools to automate repetitive tasks, optimize web development workflows, scrape data, and boost daily productivity. This course is specially designed to bridge the gap between traditional scripting and modern AI productivity frameworks, helping developers write cleaner code in less time.",
+    "howToStart": [
+      "Python-এর মৌলিক ধারণা এবং VS Code টেক্সট এডিটর রেডি করে নিন।",
+      "OpenAI API Keys বা প্রয়োজনীয় AI প্ল্যাটফর্মের একাউন্ট ক্রিয়েট করুন।",
+      "প্রতিদিন নির্দিষ্ট সময় অটোমেশন স্ক্রিপ্টগুলো বাস্তবে প্রয়োগ করার চেষ্টা করুন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Python Scripting Refresher & Automation Fundamentals" },
+      { "week": "Week 2", "topic": "Web Scraping Techniques, API Integration & Error Handling" },
+      { "week": "Week 3", "topic": "AI Tools Integration for Automated Code Generation & Debugging" },
+      { "week": "Week 4", "topic": "Building Custom Productivity Tools & Workflow Automation Projects" }
+    ]
   },
   {
     "id": 4,
@@ -39,9 +72,20 @@
     "duration": "8 hours",
     "rating": 4.9,
     "level": "All Levels",
-    "description": "Make the safest investment for your future career. Get comprehensive industry insights and absolute skill mastery guidelines.",
     "image": "/courses/it.jpg",
-    "category": "Career"
+    "category": "Career",
+    "overview": "Make the safest investment for your future career. Get comprehensive industry insights and absolute skill mastery guidelines. Navigating the competitive technology landscape requires a strategic roadmap. This program covers skill domain selection, resume building, LinkedIn optimization, interview techniques, personal branding, and career advancement strategies. You will gain clarity on choosing the right track—whether Software Engineering, Data Science, Cybersecurity, or Product Design.",
+    "howToStart": [
+      "নিজের বর্তমান স্কিল এবং পছন্দের টেকনিক্যাল ফিল্ড চিহ্নিত করুন।",
+      "একটি ডায়রি বা ডিজিটাল নোটে নিজের ক্যারিয়ার গোল সেট করুন।",
+      "মডিউল অনুযায়ী জীবনবৃত্তান্ত (Resume) ও LinkedIn প্রোফাইল আপডেট শুরু করুন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Tech Industry Overview, Self-Assessment & Path Selection" },
+      { "week": "Week 2", "topic": "Crafting High-Impact Tech Resumes, Cover Letters & Portfolios" },
+      { "week": "Week 3", "topic": "Personal Branding on LinkedIn, Networking & Remote Job Hunting" },
+      { "week": "Week 4", "topic": "Technical & Behavioral Interview Mastery, Salary Negotiation Techniques" }
+    ]
   },
   {
     "id": 5,
@@ -50,9 +94,20 @@
     "duration": "40 hours",
     "rating": 4.8,
     "level": "Intermediate",
-    "description": "Time is changing and technology is advancing. Build powerful, demand-driven applications using the modern MERN ecosystem.",
     "image": "/courses/mstack.jpg",
-    "category": "Development"
+    "category": "Development",
+    "overview": "Time is changing and technology is advancing. Build powerful, demand-driven applications using the modern MERN ecosystem. Master MongoDB, Express.js, React.js, and Node.js from the ground up. This course focuses on practical, real-world full-stack development, guiding you through building RESTful APIs, implementing JWT authentication, managing React states, and deploying complete web applications on modern cloud platforms.",
+    "howToStart": [
+      "HTML, CSS এবং Modern JavaScript (ES6+) কনসেপ্টগুলো রিক্যাপ করে নিন।",
+      "Node.js, Git এবং MongoDB Compass পিসিতে ইনস্টল করুন।",
+      "মডিউল ভিত্তিক ছোট ছোট মক প্রজেক্ট বানিয়ে কোড GitHub-এ পুশ করা শুরু করুন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Modern JavaScript Refresher & Node.js/Express.js Backend Setup" },
+      { "week": "Week 2", "topic": "Database Management with MongoDB, Mongoose Schema & REST API Design" },
+      { "week": "Week 3", "topic": "React Fundamentals, Hooks, State Management & Frontend Integration" },
+      { "week": "Week 4", "topic": "Full-Stack Integration, JWT Authentication, and Cloud Deployment" }
+    ]
   },
   {
     "id": 6,
@@ -61,9 +116,20 @@
     "duration": "50 hours",
     "rating": 4.9,
     "level": "Advanced",
-    "description": "A comprehensive end-to-end full-stack course covering MongoDB, Express.js, React, Node.js, Next.js, and AI automation tools.",
     "image": "/courses/react.jpg",
-    "category": "Development"
+    "category": "Development",
+    "overview": "A comprehensive end-to-end full-stack course covering MongoDB, Express.js, React, Node.js, Next.js, and AI automation tools. Designed for ambitious developers, this course dives deep into enterprise architecture, advanced state management (Redux Toolkit), Server-Side Rendering (SSR) with Next.js, payment gateway integrations, security best practices, and leveraging AI tools to accelerate development velocity.",
+    "howToStart": [
+      "MERN স্ট্যাক বা ফান্ডামেন্টাল ওয়েব ডেভেলপমেন্ট অভিজ্ঞতা নিশ্চিত করুন।",
+      "ডেভেলপমেন্ট এনভায়রনমেন্ট ও ব্রাউজার ডেভেলপার টুলস ঠিকঠাক প্রস্তুত করুন।",
+      "প্রতি সপ্তাহে ডেডিকেটেড লাইভ প্রজেক্ট কোড করার মানসিক প্রস্তুতি নিন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Advanced Architecture Patterns in Node.js & Secure API Development" },
+      { "week": "Week 2", "topic": "Next.js Server Components, SSR/SSG, and Dynamic Routing" },
+      { "week": "Week 3", "topic": "Complex State Management with Redux Toolkit & Payment Gateway Integration" },
+      { "week": "Week 4", "topic": "AI-Powered Code Optimization, Docker Basics & Production Deployment" }
+    ]
   },
   {
     "id": 7,
@@ -72,9 +138,20 @@
     "duration": "22 hours",
     "rating": 4.8,
     "level": "Intermediate",
-    "description": "Learn the most demanding marketplace skill. Build professional, highly functional, and beautiful business websites without coding.",
     "image": "/courses/wp.jpg",
-    "category": "Development"
+    "category": "Development",
+    "overview": "Learn the most demanding marketplace skill. Build professional, highly functional, and beautiful business websites without coding. Master modern visual page builders like Elementor Pro, WooCommerce store development, theme customizer settings, speed optimization, and security setup. Learn step-by-step how to convert client requirements into functional corporate, e-commerce, and agency websites easily.",
+    "howToStart": [
+      "LocalWP অথবা XAMPP ইনস্টল করে আপনার পিসিতে লোকাল ওয়ার্ডপ্রেস পরিবেশ তৈরি করুন।",
+      "ওয়ার্ডপ্রেসের ড্যাশবোর্ড, থিম এবং প্লাগইন আর্কিটেকচার সম্পর্কে ধারণা নিন।",
+      "প্রতি সপ্তাহে ডেমো ক্লায়েন্ট ব্রিফ ধরে সাইট ডিজাইন করা প্র্যাকটিস করুন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "WordPress Installation, Local Server Setup & Core Dashboard Mastery" },
+      { "week": "Week 2", "topic": "Advanced Page Building with Elementor Pro & Dynamic Content" },
+      { "week": "Week 3", "topic": "E-Commerce Store Setup with WooCommerce & Payment Gateways" },
+      { "week": "Week 4", "topic": "Website Speed Optimization, Security Hardening & Client Delivery Best Practices" }
+    ]
   },
   {
     "id": 8,
@@ -83,9 +160,20 @@
     "duration": "20 hours",
     "rating": 4.7,
     "level": "Intermediate",
-    "description": "Get ready for the computer-delivered IELTS exam with comprehensive guidelines, mock test practice, and score strategies.",
     "image": "/courses/ielts.jpg",
-    "category": "Language"
+    "category": "Language",
+    "overview": "Get ready for the computer-delivered IELTS exam with comprehensive guidelines, mock test practice, and score strategies. Master all four modules—Listening, Reading, Writing, and Speaking—tailored specifically for the computer-delivered format. Gain key techniques for managing screen time, typing essays efficiently, navigating reading passages seamlessly, and answering speaking questions with high fluency and precision.",
+    "howToStart": [
+      "আপনার বর্তমান ভোকাবুলারি এবং ব্যাকরণের অবস্থান যাচাই করতে একটি ফ্রন্টলাইন ডায়াগনস্টিক টেস্ট দিন।",
+      "টাইপিং স্পিড এবং স্ক্রিনে পড়ার দক্ষতা বৃদ্ধি করার দিকে নজর দিন।",
+      "রুটিন মেনে প্রতিদিন লিসেনিং এবং রিডিং মডিউল টাইমিং ধরে অনুশীলন করুন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Computer-Based Interface Familiarization & Listening Strategies" },
+      { "week": "Week 2", "topic": "Academic/General Reading Techniques (Skimming, Scanning & Time Management)" },
+      { "week": "Week 3", "topic": "Task 1 & Task 2 Writing Structures, Vocabulary Expansion & Mock Typing" },
+      { "week": "Week 4", "topic": "Speaking Test Simulations, Fluency Drills & Full-Length Computer Mock Exams" }
+    ]
   },
   {
     "id": 9,
@@ -94,9 +182,20 @@
     "duration": "15 hours",
     "rating": 4.6,
     "level": "Beginner",
-    "description": "Build your confidence and speak English fluently with interactive modules, daily practice, and real conversations.",
     "image": "/courses/spkn.jpg",
-    "category": "Language"
+    "category": "Language",
+    "overview": "Build your confidence and speak English fluently with interactive modules, daily practice, and real conversations. This course helps you overcome hesitation, correct pronunciation, expand practical vocabulary, and structure sentences effortlessly. Designed for professionals and students who want to express their ideas clearly in everyday interactions, job interviews, and workplace presentations.",
+    "howToStart": [
+      "জড়তা কাটানোর মানসিকতা নিয়ে নিয়মিত আয়নার সামনে কথা বলার প্র্যাকটিস শুরু করুন।",
+      "লেসনের সাথে দেওয়া প্রতিদিনের অডিও ট্রাক বা ডায়ালগগুলো মনোযোগ দিয়ে শুনুন।",
+      "সহপাঠী বা নিজের সাথে ইংরেজিতে দৈনন্দিন অভিজ্ঞতা শেয়ার করার অভ্যাস গড়ে তুলুন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Overcoming Fear of Speaking, Phonetics Basics & Everyday Phrases" },
+      { "week": "Week 2", "topic": "Sentence Structuring, Correcting Common Grammar Mistakes & Vocabulary" },
+      { "week": "Week 3", "topic": "Conversational Fluency in Professional & Social Situations" },
+      { "week": "Week 4", "topic": "Presentation Skills, Public Speaking & Mock Interview Practice" }
+    ]
   },
   {
     "id": 10,
@@ -105,9 +204,20 @@
     "duration": "18 hours",
     "rating": 4.7,
     "level": "Advanced",
-    "description": "Upgrade your professional skills to the next level with our exclusive masterclass tailored for global marketplace success.",
     "image": "/courses/si.jpg",
-    "category": "Career"
+    "category": "Career",
+    "overview": "Upgrade your professional skills to the next level with our exclusive masterclass tailored for global marketplace success. Learn how to successfully pitch to international clients, craft winning cover letters on platforms like Upwork and Fiverr, price your services strategically, manage contracts, and turn one-time buyers into long-term retainer clients.",
+    "howToStart": [
+      "আপনার সেরা কাজের নমুনা বা প্রজেক্টগুলো একটি নির্দিষ্ট ড্রাইভে গুছিয়ে পোর্টফোলিও তৈরি করুন।",
+      "ফ্রিল্যান্সিং প্ল্যাটফর্মের গাইডলাইন ও পলিসিগুলো ভালো করে পঠন করুন।",
+      "প্রতিদিন কভার লেটার লেখার স্টাইল ও জব পোস্ট অ্যানালাইসিস করার জন্য সময় দিন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Positioning Your Skills & Building Professional Freelance Profiles" },
+      { "week": "Week 2", "topic": "Job Search Techniques, Decoding Client Requirements & Winning Proposals" },
+      { "week": "Week 3", "topic": "Client Communication Secrets, Negotiation Strategies & Managing Contracts" },
+      { "week": "Week 4", "topic": "Scaling Freelance Business, Direct Client Acquisition & Managing Payments" }
+    ]
   },
   {
     "id": 11,
@@ -116,9 +226,20 @@
     "duration": "25 hours",
     "rating": 4.8,
     "level": "Beginner",
-    "description": "Master wireframing, high-fidelity UI design, user journey mapping, and professional prototyping using Figma.",
     "image": "/courses/fsd.jpg",
-    "category": "Design"
+    "category": "Design",
+    "overview": "Master wireframing, high-fidelity UI design, user journey mapping, and professional prototyping using Figma. Develop a strong product design foundation by mastering user research methodologies, information architecture, wireframing, design systems, and interactive prototyping. Learn how to transform complex product specifications into intuitive and user-centered web and mobile app interfaces.",
+    "howToStart": [
+      "একটি ফ্রি Figma একাউন্ট খুলুন এবং ইন্টারফেসের সাথে পরিচিত হন।",
+      "সেরা সেরা মোবাইল ও ওয়েবাসাইটের লেআউট ও ইউজাবিলিটি প্যাটাক্স খেয়াল করুন।",
+      "নিয়মিত ভিডিও টিউটোরিয়াল দেখে Figma-তে নিজের হাত পাকানো শুরু করুন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Introduction to UI/UX Principles, User Research & Personas" },
+      { "week": "Week 2", "topic": "Information Architecture, User Flows & Low-Fidelity Wireframing" },
+      { "week": "Week 3", "topic": "Figma Deep Dive – Auto-Layout, Design Systems & High-Fidelity UI" },
+      { "week": "Week 4", "topic": "Interactive Prototyping, Usability Testing & Hand-off to Developers" }
+    ]
   },
   {
     "id": 12,
@@ -127,9 +248,20 @@
     "duration": "28 hours",
     "rating": 4.9,
     "level": "Beginner",
-    "description": "Learn network security basics, vulnerability assessments, penetration testing, and modern ethical hacking methodologies.",
     "image": "/courses/fswd.jpg",
-    "category": "Cyber Security"
+    "category": "Cyber Security",
+    "overview": "Learn network security basics, vulnerability assessments, penetration testing, and modern ethical hacking methodologies. Dive into the world of offensive and defensive cybersecurity. Understand TCP/IP protocols, system vulnerabilities, web application security risks (OWASP Top 10), footprinting, and ethical penetration testing in a hands-on, simulated environment.",
+    "howToStart": [
+      "আপনার কম্পিউটারে VirtualBox ইনস্টল করে Kali Linux এনভায়রনমেন্ট সেটআপ করুন।",
+      "বেসিক Networking কনসেপ্ট এবং Linux Terminal Command অনুশীলনে সময় দিন।",
+      "কোর্সের দেওয়া ল্যাব এনভায়রনমেন্টে সুরক্ষিতভাবে পেনেট্রেশন টেস্ট প্র্যাকটিস করুন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Cybersecurity Fundamentals, Networking Basics & Linux Command Line" },
+      { "week": "Week 2", "topic": "Reconnaissance, Footprinting & Scanning Networks" },
+      { "week": "Week 3", "topic": "Web Application Vulnerabilities (OWASP Top 10) & System Hacking" },
+      { "week": "Week 4", "topic": "Penetration Testing Methodology, Remediation & Incident Reporting" }
+    ]
   },
   {
     "id": 13,
@@ -138,8 +270,19 @@
     "duration": "20 hours",
     "rating": 4.6,
     "level": "All Levels",
-    "description": "Accelerate business growth using advanced SEO tools, targeted social media marketing campaigns, and Google Analytics.",
     "image": "/courses/mern.jpg",
-    "category": "Marketing"
+    "category": "Marketing",
+    "overview": "Accelerate business growth using advanced SEO tools, targeted social media marketing campaigns, and Google Analytics. This course gives you a complete performance marketing overview. Learn Search Engine Optimization (SEO), Meta and Google Ads, content funnel design, email marketing, and conversion tracking to consistently attract, engage, and convert online audiences for businesses.",
+    "howToStart": [
+      "একটি Facebook Business Manager এবং Google Ads ডেমো একাউন্ট সেটআপ করুন।",
+      "ডিজিটাল মার্কেটিং এর বেসিক টার্মগুলো (যেমন: CTR, CPC, ROI, Funnel) সম্পর্কে জানুন।",
+      "লাইভ ক্যাম্পেইন কেস স্টাডিগুলো দেখে নিজে ছোট বাজেটে অ্যাড প্র্যাকটিস করার চেষ্টা করুন।"
+    ],
+    "routine": [
+      { "week": "Week 1", "topic": "Fundamentals of Digital Marketing & Audience Funnel Strategy" },
+      { "week": "Week 2", "topic": "On-Page & Off-Page SEO Techniques, Keyword Research" },
+      { "week": "Week 3", "topic": "Social Media Marketing (Meta Ads) & Content Creation Strategy" },
+      { "week": "Week 4", "topic": "Google Ads (SEM), Data Analytics with Google Analytics 4 & Conversion Optimization" }
+    ]
   }
 ]
