@@ -21,20 +21,20 @@ export default function SignInPage() {
     await signIn.email({
       email,
       password,
-      callbackURL: "/",
+      callbackURL: "/my-profile",
       fetchOptions: {
         onRequest: () => {
           setLoading(true);
         },
         onSuccess: () => {
           setLoading(false);
-          toast.success("Login successful! Redirecting...", {
+          toast.success("Login successful! Redirecting to profile...", {
             position: "top-right",
             autoClose: 2000,
           });
           
           setTimeout(() => {
-            router.push("/");
+            router.push("/my-profile");
           }, 1500);
         },
         onError: (ctx) => {

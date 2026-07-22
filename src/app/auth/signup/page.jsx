@@ -33,20 +33,20 @@ export default function SignUpPage() {
       email,
       password,
       name,
-      callbackURL: "/",
+      callbackURL: "/auth/signin",
       fetchOptions: {
         onRequest: () => {
           setLoading(true);
         },
         onSuccess: () => {
           setLoading(false);
-          toast.success("Account created successfully! Redirecting...", {
+          toast.success("Account created successfully! Redirecting to Sign In...", {
             position: "top-right",
             autoClose: 2000,
           });
 
           setTimeout(() => {
-            router.push("/");
+            router.push("/auth/signin");
           }, 1500);
         },
         onError: (ctx) => {
