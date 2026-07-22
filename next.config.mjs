@@ -11,6 +11,8 @@ const nextConfig = {
       },
     ],
   },
+  // Turbopack ব্যবহারের জন্য empty object
+  turbopack: {},
 };
 
 export default nextConfig;
