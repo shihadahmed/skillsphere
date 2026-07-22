@@ -68,7 +68,7 @@ export default function HeroSlider() {
                   src={slide.image}
                   alt={slide.title}
                   fill
-                  priority={index === 0} // শুধুমাত্র প্রথম স্লাইড প্রিলোড হবে
+                  priority={index === 0}
                   sizes="(max-width: 1256px) 100vw, 1256px"
                   className="object-contain object-center" 
                 />

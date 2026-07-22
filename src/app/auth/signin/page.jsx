@@ -21,7 +21,7 @@ export default function SignInPage() {
     await signIn.email({
       email,
       password,
-      callbackURL: "/my-profile",
+      callbackURL: "/courses",
       fetchOptions: {
         onRequest: () => {
           setLoading(true);
@@ -32,9 +32,9 @@ export default function SignInPage() {
             position: "top-right",
             autoClose: 2000,
           });
-          
+
           setTimeout(() => {
-            router.push("/my-profile");
+            router.push("/courses");
           }, 1500);
         },
         onError: (ctx) => {
@@ -53,7 +53,6 @@ export default function SignInPage() {
       <ToastContainer />
 
       <div className="w-full max-w-4xl bg-white rounded-2xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
-        
         <div className="bg-gradient-to-br from-blue-600 via-indigo-600 to-cyan-600 text-white p-8 sm:p-12 flex flex-col justify-center items-center text-center">
           <Link href="/" className="text-2xl font-bold tracking-wider mb-6">
             Skill<span className="text-cyan-300">Sphere</span>
@@ -63,7 +62,8 @@ export default function SignInPage() {
             Welcome back!
           </h2>
           <p className="text-xs sm:text-sm text-blue-100 leading-relaxed max-w-sm mb-8">
-            To stay connected with us, please login with your personal information and continue your learning journey.
+            To stay connected with us, please login with your personal
+            information and continue your learning journey.
           </p>
 
           <Link
@@ -105,7 +105,10 @@ export default function SignInPage() {
             </div>
 
             <div className="flex justify-end">
-              <Link href="#" className="text-xs text-blue-600 hover:underline font-medium">
+              <Link
+                href="#"
+                className="text-xs text-blue-600 hover:underline font-medium"
+              >
                 Forgot password?
               </Link>
             </div>
@@ -122,20 +125,27 @@ export default function SignInPage() {
           <div className="mt-6 text-center">
             <p className="text-xs text-gray-500 mb-3">or signin with</p>
             <div className="flex justify-center gap-3">
-              <button type="button" className="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:opacity-90 transition-all cursor-pointer">
+              <button
+                type="button"
+                className="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:opacity-90 transition-all cursor-pointer"
+              >
                 <FaFacebook className="text-base" />
               </button>
-              <button type="button" className="w-9 h-9 rounded-full bg-red-500 text-white flex items-center justify-center hover:opacity-90 transition-all cursor-pointer">
+              <button
+                type="button"
+                className="w-9 h-9 rounded-full bg-red-500 text-white flex items-center justify-center hover:opacity-90 transition-all cursor-pointer"
+              >
                 <FaGoogle className="text-base" />
               </button>
-              <button type="button" className="w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center hover:opacity-90 transition-all cursor-pointer">
+              <button
+                type="button"
+                className="w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center hover:opacity-90 transition-all cursor-pointer"
+              >
                 <FaLinkedinIn className="text-base" />
               </button>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   );

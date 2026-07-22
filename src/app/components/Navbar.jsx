@@ -2,28 +2,52 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useSession, signOut } from "@/lib/auth-client";
 
 export default function NavbarComponent() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { data: session } = useSession();
+
   const pathname = usePathname();
+  const router = useRouter();
 
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Courses", href: "/courses" },
-    { name: "My Profile", href: "/my-profile" },
+    { name: "Course Details", href: "/course-details" },
   ];
+
+  const isSignInActive = pathname === "/auth/signin";
+  const isSignUpActive = pathname === "/auth/signup";
+
+  const userInitial = session?.user?.name
+    ? session.user.name.charAt(0).toUpperCase()
+    : session?.user?.email
+      ? session.user.email.charAt(0).toUpperCase()
+      : "U";
+
+  const handleLogout = async () => {
+    await signOut({
+      fetchOptions: {
+        onSuccess: () => {
+          setIsMobileMenuOpen(false);
+          router.push("/");
+        },
+      },
+    });
+  };
 
   return (
     <nav className="w-full bg-white border-b border-gray-100 shadow-sm h-20 sticky top-0 z-50 flex items-center">
       <div className="w-full max-w-7xl mx-auto px-6 flex items-center justify-between">
-        
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2">
             <div className="flex leading-none font-sans">
               <span className="text-2xl font-bold text-blue-600">Skill</span>
-              <span className="text-2xl font-semibold text-blue-500">Sphere</span>
+              <span className="text-2xl font-semibold text-blue-500">
+                Sphere
+              </span>
             </div>
           </Link>
         </div>
@@ -52,33 +76,45 @@ export default function NavbarComponent() {
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-          {isLoggedIn ? (
+          {session ? (
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-teal-400 p-0.5 cursor-pointer">
+              <Link
+                href="/my-profile"
+                className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-teal-400 p-0.5 cursor-pointer hover:scale-105 transition-transform"
+                title={session.user.name || "My Profile"}
+              >
                 <div className="w-full h-full rounded-full bg-white flex items-center justify-center font-bold text-gray-700 text-sm">
-                  U
+                  {userInitial}
                 </div>
-              </div>
-              
-              <button 
-                onClick={() => setIsLoggedIn(false)}
+              </Link>
+
+              <button
+                onClick={handleLogout}
                 className="text-sm font-medium text-red-500 hover:text-red-600 border border-red-200 hover:border-red-300 px-4 py-2 rounded-full transition-all cursor-pointer"
               >
-                Logout
+                Sign Out
               </button>
             </div>
           ) : (
             <div className="flex items-center gap-3">
-              <Link 
+              <Link
                 href="/auth/signin"
-                className="text-sm font-medium text-gray-700 hover:text-blue-600 px-4 py-2 transition-colors cursor-pointer"
+                className={`text-sm font-medium px-5 py-2.5 rounded-full transition-all cursor-pointer ${
+                  isSignInActive
+                    ? "bg-gradient-to-r from-blue-600 via-teal-500 to-emerald-500 text-white shadow-sm"
+                    : "text-gray-700 hover:text-blue-600"
+                }`}
               >
                 Login
               </Link>
-              
-              <Link 
+
+              <Link
                 href="/auth/signup"
-                className="bg-gradient-to-r from-blue-600 via-teal-500 to-emerald-500 text-white text-sm font-medium px-5 py-2.5 rounded-full hover:opacity-95 transition-opacity"
+                className={`text-sm font-medium px-5 py-2.5 rounded-full transition-all cursor-pointer ${
+                  isSignUpActive
+                    ? "bg-gradient-to-r from-blue-600 via-teal-500 to-emerald-500 text-white shadow-sm"
+                    : "text-gray-700 hover:text-blue-600"
+                }`}
               >
                 SignUp
               </Link>
@@ -93,17 +129,36 @@ export default function NavbarComponent() {
             aria-label="Toggle Menu"
           >
             {isMobileMenuOpen ? (
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-7 h-7"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             ) : (
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                className="w-7 h-7"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             )}
           </button>
         </div>
-
       </div>
 
       {isMobileMenuOpen && (
@@ -132,39 +187,50 @@ export default function NavbarComponent() {
           <hr className="border-gray-100 my-1" />
 
           <div>
-            {isLoggedIn ? (
+            {session ? (
               <div className="flex items-center justify-between pt-2">
-                <div className="flex items-center gap-3">
+                <Link
+                  href="/my-profile"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex items-center gap-3"
+                >
                   <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-teal-400 p-0.5">
                     <div className="w-full h-full rounded-full bg-white flex items-center justify-center font-bold text-gray-700 text-sm">
-                      U
+                      {userInitial}
                     </div>
                   </div>
-                  <span className="text-sm font-medium text-gray-700">User Profile</span>
-                </div>
-                <button 
-                  onClick={() => {
-                    setIsLoggedIn(false);
-                    setIsMobileMenuOpen(false);
-                  }}
+                  <span className="text-sm font-medium text-gray-700">
+                    My Profile
+                  </span>
+                </Link>
+                <button
+                  onClick={handleLogout}
                   className="text-sm font-medium text-red-500 hover:text-red-600 border border-red-200 px-4 py-2 rounded-full"
                 >
-                  Logout
+                  Sign Out
                 </button>
               </div>
             ) : (
               <div className="flex flex-col gap-3 pt-2">
-                <Link 
+                <Link
                   href="/auth/signin"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="w-full text-center text-sm font-semibold text-gray-700 hover:text-blue-600 py-2.5 border border-gray-200 rounded-lg"
+                  className={`w-full text-center text-sm font-semibold py-2.5 rounded-lg transition-all ${
+                    isSignInActive
+                      ? "bg-gradient-to-r from-blue-600 via-teal-500 to-emerald-500 text-white"
+                      : "text-gray-700 hover:text-blue-600 border border-gray-200"
+                  }`}
                 >
                   Login
                 </Link>
-                <Link 
+                <Link
                   href="/auth/signup"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="w-full text-center bg-gradient-to-r from-blue-600 via-teal-500 to-emerald-500 text-white text-sm font-semibold py-2.5 rounded-lg"
+                  className={`w-full text-center text-sm font-semibold py-2.5 rounded-lg transition-all ${
+                    isSignUpActive
+                      ? "bg-gradient-to-r from-blue-600 via-teal-500 to-emerald-500 text-white"
+                      : "text-gray-700 hover:text-blue-600 border border-gray-200"
+                  }`}
                 >
                   SignUp
                 </Link>

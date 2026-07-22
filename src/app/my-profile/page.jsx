@@ -15,7 +15,7 @@ export default function MyProfilePage() {
     async function fetchUserSession() {
       try {
         const { data } = await authClient.getSession();
-        
+
         if (!data || !data.user) {
           router.push("/auth/signin");
           return;
@@ -58,7 +58,9 @@ export default function MyProfilePage() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-100">
-        <div className="text-blue-600 font-semibold text-lg animate-pulse">Loading Profile...</div>
+        <div className="text-blue-600 font-semibold text-lg animate-pulse">
+          Loading Profile...
+        </div>
       </div>
     );
   }
@@ -72,7 +74,7 @@ export default function MyProfilePage() {
           <div className="w-24 h-24 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-3xl font-bold flex items-center justify-center shadow-lg mb-4">
             {user?.name ? user.name.charAt(0).toUpperCase() : "U"}
           </div>
-          
+
           <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
             {user?.name || "User Name"}
           </h1>
@@ -85,17 +87,23 @@ export default function MyProfilePage() {
         </div>
 
         <div className="py-6 space-y-4">
-          <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider">Account Details</h3>
-          
+          <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider">
+            Account Details
+          </h3>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
               <p className="text-xs text-gray-400 font-medium">Full Name</p>
-              <p className="text-sm font-semibold text-slate-800 mt-1">{user?.name}</p>
+              <p className="text-sm font-semibold text-slate-800 mt-1">
+                {user?.name}
+              </p>
             </div>
 
             <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
               <p className="text-xs text-gray-400 font-medium">Email Address</p>
-              <p className="text-sm font-semibold text-slate-800 mt-1">{user?.email}</p>
+              <p className="text-sm font-semibold text-slate-800 mt-1">
+                {user?.email}
+              </p>
             </div>
           </div>
         </div>
@@ -107,7 +115,7 @@ export default function MyProfilePage() {
           >
             Back to Home
           </button>
-          
+
           <button
             onClick={handleSignOut}
             className="flex-1 py-3 bg-red-500 hover:bg-red-600 text-white font-bold text-sm rounded-xl shadow-md transition-all cursor-pointer"
