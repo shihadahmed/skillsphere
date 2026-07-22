@@ -33,7 +33,7 @@ export default function SignUpPage() {
       email,
       password,
       name,
-      callbackURL: "/auth/signin",
+      callbackURL: "/",
       fetchOptions: {
         onRequest: () => {
           setLoading(true);
